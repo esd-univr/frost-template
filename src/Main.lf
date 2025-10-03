@@ -21,10 +21,11 @@ preamble{=
     from enum import Enum
     from frost import FROST_CONFIG, is_target_valid
     from machine_data_model.protocols.frost_v1.frost_message import FrostMessage
-    from machine_data_model.protocols.frost_v1.frost_header import MsgType, MsgNamespace, ProtocolMsgName, FrostHeader
+    from machine_data_model.protocols.frost_v1.frost_header import MsgType, MsgNamespace, ProtocolMsgName, FrostHeader, MethodMsgName, VariableMsgName
     from machine_data_model.protocols.frost_v1.frost_payload import VariablePayload, ProtocolPayload, MethodPayload, ErrorPayload
     from machine_data_model.protocols.frost_v1.frost_protocol_mng import FrostProtocolMng
     from machine_data_model.builder.data_model_builder import DataModelBuilder
+    from machine_data_model.protocols.frost_v1.frost_message_builder import FrostMessageBuilder
     from machine_data_model.protocols.protocol_mng import Message
     from machine_data_model.nodes.method_node import MethodNode, AsyncMethodNode
     from machine_data_model.nodes.composite_method.composite_method_node import CompositeMethodNode
