@@ -8,4 +8,11 @@ reactors:
     reactors:
       message_filter:
         logging_level: WARNING
+  hello:
+    logging_level: INFO
+    parameters:
+      data_model_path: "resources/data_model/hello.yml"
+    reactors:
+      hello_reactor:
+        logging_level: INFO
   
